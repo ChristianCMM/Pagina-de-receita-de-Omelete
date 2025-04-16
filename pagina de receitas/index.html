@@ -22,7 +22,7 @@
       justify-content: center;
     }
     .fundo{
-      margin-top: 10rem;
+      margin: 10rem 0;
       background-color: hsl(0, 0%, 100%);
       border-radius: 15px;
       width: 40%;
@@ -66,6 +66,35 @@
       font-family: 'Young Serif';
       font-weight: 400;
       font-size: 30px;
+    }
+    .ingredientes, li{
+      font-size: 16px;
+      font-family: 'Outfit';
+      font-weight: 400;
+      color: hsl(30, 10%, 34%);
+    }
+    .nutricao, p,table{
+      font-size: 16px;
+      font-family: 'Outfit';
+      font-weight: 400;
+      color: hsl(30, 10%, 34%);
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tr{
+      border-bottom: 1px hsl(30, 18%, 87%) solid;
+    }
+    td{
+      padding: 1rem;
+    }
+    .valor{
+      color: hsl(332, 51%, 32%); 
+      font-weight: 600;
+    }
+    tfoot{
+
     }
   </style>
 </head>
@@ -124,22 +153,24 @@
       <p>The table below shows nutritional values per serving without the additional fillings.</p>
       
       <table>
-        <tr>
-          <td>Calories</td>
-          <td>277kcal</td>
-        </tr>
-        <tr>
-          <td>Carbs</td>
-          <td>0g</td>
-        </tr>
-        <tr>
-          <td>Protein</td>
-          <td>20g</td>
-        </tr>
-        <tr>
-          <td>Fat</td>
-          <td>22g</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td colspan="3">Calories</td>
+            <td class="valor">277kcal</td>
+          </tr>
+          <tr>
+            <td colspan="3">Carbs</td>
+            <td class="valor">0g</td>
+          </tr>
+          <tr>
+            <td colspan="3">Protein</td>
+            <td class="valor">20g</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3">Fat</td>
+          <td class="valor">22g</td>
+        </tfoot>
       </table>   
     </section>
     
